@@ -1,0 +1,154 @@
+/* Foglio di stile pagina di presentazione */
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 4px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+
+/* Header*/
+header {
+    background-image: url(../img/sfondoLuna.jpg);
+    text-align: center;
+    width: 576px;
+
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 3em;
+    font-style: italic;
+    padding: 25px;
+}
+
+header p {
+    color: #F44A4A;
+    font-style: italic;
+}
+
+/*Text Studente Full-Stack*/
+.studentefs {
+    font-weight: bold;
+}
+
+/*Unorder list Mappa della pagina*/
+header ul {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.ulnav {
+    color: hsl(67, 98%, 26%);
+    line-height: 2.7em;
+}
+
+header a:hover {
+    color: #F44A4A;
+}
+
+/*Main*/
+
+h2 {
+    color: #1F3D7A;
+    font-size: 1.65em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+/*Sezione Chi sono*/
+
+.incipit {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+    /*Epicode p sezione chi sono - Html li sezione competenze*/
+}
+
+.em {
+    font-style: italic;
+}
+
+/*Competenze*/
+
+.competenzeul {
+    line-height: 1.7em;
+}
+
+.competenzeul li:nth-child(odd) {
+    background-color: #F5F7FB;
+}
+
+/*Progetti*/
+
+.project-recipe {
+    background-color: #FBF8EF;
+}
+
+.project-card {
+    background-color: #e9e7e7;
+}
+
+/*Contattami*/
+
+label {
+    color: #1F3D7A;
+    font-weight: bold;
+    text-align: left;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    font-size: 1em;
+    width: 60%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F5F7FB;
+}
+
+#checkbox {
+    width: 2%;
+}
+
+input:focus {
+    background-color: #232323;
+    color: whitesmoke;
+}
+
+textarea:focus {
+    background-color: #232323;
+    color: whitesmoke;
+}
+
+select {
+    margin-top: 5px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F5F7FB;
+}
+
+button {
+    color: whitesmoke;
+    background-color: hsl(220, 60%, 30%);
+    font-weight: bold;
+    width: 30%;
+    margin-top: 3.5%;
+}
+
+button:hover {
+    background-color: hsl(220, 60%, 45%);
+}
+
+/*Footer*/
+
+footer {
+    background-color: #172136;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2px;
+    font-size: 0.9rem;
+}
