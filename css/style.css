@@ -1,20 +1,32 @@
 /* Foglio di stile pagina di presentazione */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
 html,
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    margin: 4px;
-    margin-top: 5px;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin: 0px;
+    padding: 0px;
     background-color: white;
+
 }
 
 
 /* Header*/
 header {
-    background-image: url(../img/sfondoLuna.jpg);
+    background-image: url(https://images.pexels.com/photos/9329360/pexels-photo-9329360.jpeg?_gl=1*pmbe67*_ga*MTA1MDA1ODE3NS4xNzkxMzc1OTky*_ga_8JE65Q40S6*czE3OTE0NjIzNTYkbzMkZzEkdDE3OTE0NjI0ODAkajYwJGwwJGgw);
+    background-size: cover;
     text-align: center;
-    width: 576px;
+    width: 100%;
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid #F44A4A;
 
 }
 
@@ -23,6 +35,7 @@ h1 {
     font-size: 3em;
     font-style: italic;
     padding: 25px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header p {
@@ -41,9 +54,25 @@ header ul {
     font-weight: bold;
 }
 
+nav ul li {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+nav ul li:hover {
+    color: #F44A4A;
+    background-color: #e0e0e0;
+}
+
+
 .ulnav {
     color: hsl(67, 98%, 26%);
     line-height: 2.7em;
+    font-size: 0.8em;
+    padding: 0px 5px;
+
 }
 
 header a:hover {
@@ -52,6 +81,12 @@ header a:hover {
 
 /*Main*/
 
+main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
 h2 {
     color: #1F3D7A;
     font-size: 1.65em;
@@ -59,10 +94,33 @@ h2 {
     padding-bottom: 0.8em;
 }
 
+main section {
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/*trattino aggiunto*/
+
+main section h2::before {
+    content: "- ";
+    color: #F44A4A;
+}
+
 /*Sezione Chi sono*/
 
 .incipit {
     font-style: italic;
+}
+
+#sezChisono p:first-of-type::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin-right: 6px;
+    color: #F44A4A;
 }
 
 .bold {
@@ -72,6 +130,19 @@ h2 {
 
 .em {
     font-style: italic;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border: 4px solid #F44A4A;
+    border-radius: 50%;
+    float: left;
+    margin: 0 24px 12px 0;
+}
+
+figure {
+    display: inline-block;
 }
 
 /*Competenze*/
@@ -84,6 +155,24 @@ h2 {
     background-color: #F5F7FB;
 }
 
+.sezCompetenze {
+    clear: both;
+}
+
+/*Esperienze*/
+
+table, tr, td {
+    border: 2px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+td {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+
 /*Progetti*/
 
 .project-recipe {
@@ -92,6 +181,19 @@ h2 {
 
 .project-card {
     background-color: #e9e7e7;
+}
+
+/*NEW content*/
+
+#sezProgetti:first-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: #F44A4A;
+    color: whitesmoke;
+    border-radius: 3px;
+    font-size: 0, 75rem;
 }
 
 /*Contattami*/
@@ -137,11 +239,17 @@ button {
     font-weight: bold;
     width: 30%;
     margin-top: 3.5%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
 
 /*Footer*/
 
@@ -151,4 +259,5 @@ footer {
     text-align: center;
     padding: 2px;
     font-size: 0.9rem;
+    width: 100%;
 }

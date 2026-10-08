@@ -34,11 +34,11 @@
 
         <!--Sezione di presentazione "Chi Sono"-->
 
-        <section>
+        <section id="sezChisono">
             <h2 id="chiSono">Chi sono</h2>
             <figure>
                 <img src="https://www.ildialogodimonza.it/wp-content/uploads/2016/06/Coniglietto1.jpg"
-                    alt="Foto che ritra Lisa Irene Sciacca" width="200px">
+                    alt="Foto che ritra Lisa Irene Sciacca" class="avatar">
                 <figcaption>Foto di L. Sciacca</figcaption>
             </figure>
             <p class="incipit">Mi chiamo Lisa Irene Sciacca, e sto imparando a programmare. Studio sviluppo web con
@@ -54,7 +54,7 @@
 
         <!--Sezione competenze-->
 
-        <section>
+        <section class="sezCompetenze">
             <h2 id="competenze">Competenze</h2>
             <p>Le tecnologie che vedo durante le prime settimane di corso sono:</p>
             <ul class="competenzeul">
@@ -102,30 +102,35 @@
         <!--Sezione progetti-->
 
         <section>
-            <h2 id="progetti">Progetti</h2>
-            <p>I lavori fatti durante le prime settimane di corso.</p>
-            <article class="project-recipe">
-                <h3>Pagina ricetta</h3>
-                <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato al contenuto
-                    reale.
-                </p>
-                <a href="javascript:void(0)" target="_blank"> Vedi su GitHub</a>
-            </article>
+            <div id="sezProgetti">
+                <h2 id="progetti">Progetti</h2>
+                <p>I lavori fatti durante le prime settimane di corso.</p>
 
-            <article class="project-card">
-                <h3>Card di presentazione</h3>
-                <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.
-                </p>
-                <a href="javascript:void(0)" target="_blank"> Vedi su GitHub</a>
-                <br /><br />
-                <a href="#header">Torna su</a></li>
-            </article>
+                <article class="project-recipe">
+                    <h3>Pagina ricetta</h3>
+                    <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato al
+                        contenuto
+                        reale.
+                    </p>
+                    <a href="javascript:void(0)" target="_blank"> Vedi su GitHub</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Card di presentazione</h3>
+                    <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura
+                        HTML.
+                    </p>
+                    <a href="javascript:void(0)" target="_blank"> Vedi su GitHub</a>
+                    <br /><br />
+                    <a href="#header">Torna su</a></li>
+                </article>
+            </div>
         </section>
 
         <!--Contatti-->
 
-
-        <h2 id="contatti">Contattami</h2>
+        <section>
+        <h2 id="contattami">Contattami</h2>
         <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
         <form action="submit" method="get">
             <label for="name">Nome</label>
@@ -159,6 +164,7 @@
             <button type="submit">Invia</button>
         </form>
         <br />
+        </section>
 
         <aside>
             <h4>Altri contatti</h4>
